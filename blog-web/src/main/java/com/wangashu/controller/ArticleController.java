@@ -1,5 +1,6 @@
 package com.wangashu.controller;
 
+import com.wangashu.domain.ResponseResult;
 import com.wangashu.entity.Article;
 import com.wangashu.service.ArticleService;
 import org.mybatis.spring.annotation.MapperScan;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RequestMapping
+@RequestMapping("/article")
 @RestController
 public class ArticleController {
 
@@ -18,10 +19,15 @@ public class ArticleController {
     @Autowired
     private ArticleService articleService;
 
-    //更具id查询
-    @GetMapping("/test")
-    public List<Article> test(){
-        return articleService.list();
+
+    @GetMapping("/hotArticleList")
+    public  ResponseResult hotArticleList(){
+
+        ResponseResult result=articleService.hotArticleList();
+
+       return result;
+
+
     }
 
 
