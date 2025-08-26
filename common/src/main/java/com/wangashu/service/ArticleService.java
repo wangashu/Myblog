@@ -6,4 +6,8 @@ import com.wangashu.entity.Article;
 
 public interface ArticleService extends IService<Article> {
     ResponseResult hotArticleList();
+
+    ResponseResult articleList(Integer pageCurrent, Integer pageSize, Long categoryId);
+
+    ResponseResult articleListDetail(Long id);
 }
