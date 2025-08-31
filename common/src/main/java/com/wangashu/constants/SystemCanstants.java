@@ -22,6 +22,15 @@ public class SystemCanstants {
 
 
 
+    public static final String LINK_STATUS_PASS = "0";
+
+    public static final String LINK_STATUS_NORMAL = "2";
+
+
+    public static final String LINK_STATUS_PROHIBIT = "1";
+
+
+
     /**
      * 文章列表当前查询页数
      */

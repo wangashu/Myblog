@@ -9,11 +9,16 @@ import java.util.Date;
 import java.io.Serializable;
 
 /**
- * 友链(Link)实体类
- *
- * @author makejava
- * @since 2025-08-26 14:23:21
+ * @author     ：王阿书
+
+ * @ DateTime       :2025/8/26 14:28
+
+ * @ Description:
+
+ * @program :
+
  */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
