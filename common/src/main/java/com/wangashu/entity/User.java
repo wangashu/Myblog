@@ -18,9 +18,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @TableName("sys_user")
-public class User implements Serializable {
-    private static final long serialVersionUID = -98278622801830348L;
-    
+public class User  {
+
     private Integer id;
     /**
      * 用户名
