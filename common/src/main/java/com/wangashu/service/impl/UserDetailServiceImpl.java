@@ -20,7 +20,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
  * @author: wangashu
  * @date: 2025/8/31 16:19
  * @className: UserDetailServiceImpl
- * @description: TODO
  */
      @Autowired
      private UserMapper userMapper;

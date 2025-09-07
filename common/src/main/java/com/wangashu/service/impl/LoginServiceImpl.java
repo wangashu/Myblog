@@ -20,7 +20,11 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
-
+/**
+ * @author: wangashu
+ * @date: 2025/8/31 18:17
+ * @className: LoginServiceImpl
+ */
 @Service
 public class LoginServiceImpl extends ServiceImpl<UserMapper, User> implements LoginService {
 
@@ -33,6 +37,7 @@ public class LoginServiceImpl extends ServiceImpl<UserMapper, User> implements L
 
     @Override
     public ResponseResult login(User user) {
+
 
             //封装登录的用户名和密码
             UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(user.getUserName(),user.getPassword());
@@ -63,5 +68,7 @@ public class LoginServiceImpl extends ServiceImpl<UserMapper, User> implements L
             UserLoginVo vo = new UserLoginVo(jwt,userInfoVo);
             //封装响应返回
             return ResponseResult.okResult(vo);
+
+
     }
 }
